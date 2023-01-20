@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  </head>
+  <body>
+  
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="Dashboard.html">Dashboard</a>
+  <a href="Appointment.html">Appointment</a>
+  <a href="Dashboard.html">About</a>
+  <a href="Contact.html">Contact</a>
+</div><span style="font-size:30px;cursor:pointer;" onclick="openNav()">&#9776; Menu</span>
+
+<div style="background-color:#29375F;color:white;height: 150px;">
+  
+<h2>Welcome Anil Kumar</h2>
+<p>Cardiology</p>
+</div>
+
+<div class="container ">
+<div class="row dashboard">
+  <!-- dashboard content -->
+    <div class="col-lg-9 ">
+      <div class="title ">
+        <div class="row earning dash" style="margin-top:-50px ;background-color:white;">
+          <div class="col-lg-4 ">
+        <h1>Total earning</h1>
+        <h2>$4200</h2></div>
+        <div class="col-lg-4">
+        <select class="form-select" aria-label="Default select example">
+          <option selected>Hospital</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+      </div>
+      <div class="col-lg-4">
+        <select class="form-select" aria-label="Default select example">
+          <option selected>Timmings</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+      </div>
+      </div>
+        </div>
+        
+      <table class="table first table-borderless">
+        <thead>
+          <tr>
+            <th scope="col">Appointment</th>
+            <th scope="col">EMR Finalised</th>
+            <th scope="col">Patient Registrations</th>
+            <th scope="col">KR4LL Visits</th>
+          </tr>
+        </thead>
+        <tr>
+          <th scope="row">54</th>
+          <td>47</td>
+          <td>120</td>
+          <td>30</td>
+        </tr>
+      </table>
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="card">
+            <div class="card-header">APPOINTMENT</div>
+            <div class="card-body">
+              <table class="table table-borderless queue">
+                <h6>Waiting queue</h6>
+                
+              <tr class="earning">
+                <td>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
+                </svg>  </td>              
+                <td><h5>Priya N</h5></td>
+                <td><p>in person</p> </td>
+                <td><button type="button" class="btn btn-outline-danger tableButton">To be Finalised</button></td>
+              </tr>
+              <tr class="earning">
+                <td>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
+                </svg>  </td>              
+                <td><h5>Rashmi</h5></td>
+                <td><p>in person</p> </td>
+                <td><button type="button" class="btn btn-outline-danger tableButton">To be Finalised</button></td>
+              </tr>
+              <tr class="earning">
+                <td>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
+                </svg>  </td>              
+                <td><h5>Rajesh</h5></td>
+                <td><p>in person</p> </td>
+                <td><button type="button" class="btn btn-outline-warning tableButton">Waiting</button></td>
+              </tr>
+              <tr class="earning">
+                <td>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
+                </svg></td>              
+                <td><h5>Rani R</h5></td>
+                <td><p>in person</p> </td>
+                <td><button type="button" class="btn btn-outline-warning tableButton">Waiting</button></td>
+              </tr>
+              </table>
+              
+            </div> 
+            <div class="card-footer">View All Appointment</div>
+          </div>
+
+        </div>
+        <div class="col-lg-6">
+          <div class="card">
+            <div class="card-header">SCHEDULE</div>
+            <div class="card-body">
+              <button type="button" class="btn btn-outline-dark">Receive  Anytime   Consultation
+              </button>
+              <h4>TODAY : MONDAY</h4>
+              <button type="button" class="btn btn-outline-success col">09:30PM        40min         </button>
+              <button type="button" class="btn btn-outline-success col">10:30PM        50min         </button>
+              <h4>TOMMOROW : TUESDAY</h4>
+              <button type="button" class="btn btn-outline-success">09:30PM      40min       </button>
+              <button type="button" class="btn btn-outline-success">10:30PM      50min       </button>
+              <h3>Wednesday</h3>
+
+
+              
+            </div> 
+            <div class="card-footer">View All Schedule</div>
+          </div>
+
+        </div>
+
+      </div>
+      
+
+    </div>
+    <div class="card  col-lg-10" style="width: 18rem; margin-top: -100px;height: auto;">
+      <img class="card-img-top" src="./assest/logo.png" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title"><i class="fa fa-bell" style="font-size:24px;color:blue"></i> Activity
+        </h5>
+        <h6><i class="fa fa-gear" style="font-size:24px;color:blue"></i>
+        User Activity</h6>
+        <h6><i class="fa fa-gear" style="font-size:24px;color:blue"></i>
+        User Activity</h6>
+        <h6>
+        <p class="card-text"><i class="fa fa-file-text" style="font-size:24px;color:blue"></i> Summary<br>Some content about summary</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+    <!-- end  dashboard content-->
+    <div>
+      
+    </div>
+    
+</div>
+</div>
+<br>
+<div class="container ">
+  <h1>Consultation History</h1>
+  <div class="col-lg-6 history">
+    
+    <canvas id="myChart" style="width:100%;max-width:700px"></canvas>
+
+  </div>
+
+</div>
+
+
+   
+</body>
+</html> 
+<script>
+  var xyValues = [
+    {x:50, y:7},
+    {x:60, y:8},
+    {x:70, y:8},
+    {x:80, y:9},
+    {x:90, y:9},
+    {x:100, y:9},
+    {x:110, y:10},
+    {x:120, y:11},
+    {x:130, y:14},
+    {x:140, y:14},
+    {x:150, y:15}
+  ];
+  
+  new Chart("myChart", {
+    type: "scatter",
+    data: {
+      datasets: [{
+        pointRadius: 4,
+        pointBackgroundColor: "rgb(0,0,255)",
+        data: xyValues
+      }]
+    },
+    options: {
+      legend: {display: false},
+      scales: {
+        xAxes: [{ticks: {min: 40, max:160}}],
+        yAxes: [{ticks: {min: 6, max:16}}],
+      }
+    }
+  });
+  </script>
+<script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
+  </script>
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>

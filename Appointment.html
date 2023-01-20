@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Appointment</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  </head>
+  <body>
+  
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="Dashboard.html">Dashboard</a>
+  <a href="Appointment.html">Appointment</a>
+  <a href="Dashboard.html">About</a>
+  <a href="Contact.html">Contact</a>
+</div>
+<div style="background-color:#29375F;color:white;height: 150px;">
+  <br>
+<h2>Welcome Anil Kumar</h2>
+<p>Cardiology</p>
+</div>
+<span style="font-size:30px;cursor:pointer;" onclick="openNav()">&#9776; Menu</span>
+<table class="table container">
+  <thead>
+    <tr>
+      <th scope="col">ORDER ID</th>
+      <th scope="col">PATIENT</th>
+      <th scope="col">CONSULTATION</th>
+      <th scope="col">TEAM</th>
+      <th scope="col">DOCTOR</th>
+      <th scope="col">SLOT</th>
+      <th scope="col">STATUS</th>
+      <th scope="col">INVOICE</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2345</th>
+      <th>Risha</th>
+      <th>Video</th>
+      <th></th>
+      <th>Anil</th>
+      <th>jul 3</th>
+      <th><button type="button" class="btn btn-outline-secondary">canceled</button>
+      </th>
+      <th><button type="button" class="btn btn-outline-secondary">Refund</button>
+      </th>
+    </tr>
+    <tr>
+      <th>2346</th>
+      <th>Nisha</th>
+      <th>Video</th>
+      <th></th>
+      <th>Greg</th>
+      <th>jul 3</th>
+      <th><button type="button" class="btn btn-outline-secondary">No show</button>
+      </th>
+      <th><button type="button" class="btn btn-outline-danger">Unpaid</button>
+      </th>
+    </tr>
+    <tr>
+      <th>2347</th>
+      <th>Ramesh</th>
+      <th>Anytime Consult</th>
+      <th></th>
+      <th>Pankaj</th>
+      <th>jul 3</th>
+      <th><button type="button" class="btn btn-outline-secondary">Complete</button>
+      </th>
+      <th><button type="button" class="btn btn-outline-success">paid</button>
+      </th>
+    </tr>
+    
+    <tr>
+      <th>2345</th>
+      <th>Risha</th>
+      <th>Video</th>
+      <th></th>
+      <th>Anil</th>
+      <th>jul 3</th>
+      <th><button type="button" class="btn btn-outline-secondary">canceled</button>
+      </th>
+      <th><button type="button" class="btn btn-outline-secondary">Refund</button>
+      </th>
+    </tr>
+    <tr>
+      <th>2346</th>
+      <th>Nisha</th>
+      <th>Video</th>
+      <th></th>
+      <th>Greg</th>
+      <th>jul 3</th>
+      <th><button type="button" class="btn btn-outline-secondary">No show</button>
+      </th>
+      <th><button type="button" class="btn btn-outline-danger">Unpaid</button>
+      </th>
+    </tr>
+    <tr>
+      <th>2347</th>
+      <th>Ramesh</th>
+      <th>Anytime Consult</th>
+      <th></th>
+      <th>Pankaj</th>
+      <th>jul 3</th>
+      <th><button type="button" class="btn btn-outline-secondary">Complete</button>
+      </th>
+      <th><button type="button" class="btn btn-outline-success">paid</button>
+      </th>
+    </tr>
+    
+  </tbody>
+</table>
+</body>
+<script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
+  </script>
+</html>
